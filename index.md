@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+<h1>Arrow Tech Insights: Windows Virtual Desktop</h1>
+`<iframe width="560" height="315" src="https://www.youtube.com/embed/30dOLcZ4_9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+<p>Tästä Github repositorystä löytyy toteutus Windows Virtual Desktop demoympäristölle.</p>
+<p>Labrassa käytettävät Azure palvelut ja niiden hinnat.</p>
 
-You can use the [editor on GitHub](https://github.com/ArrowFi-Tech-Insights/WvdDemo/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<p>Azure Active Directory Domain Services (myöhemmin ADDS): https://azure.microsoft.com/en-us/pricing/details/active-directory-ds/</p>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<p>Windows Virtual Desktop (myöhemmin WVD): https://azure.microsoft.com/en-us/pricing/details/virtual-desktop/</p>
 
-### Markdown
+<p>Suosittelemme poistamaan Azureen provisioidut palvelut heti labran jälkeen ylimääräisten kulujen välttämiseksi.</p>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<h2>Ympäristön pystyttäminen.</h2>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ArrowFi-Tech-Insights/WvdDemo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<p>1. Luo uusi resource group haluamallesi Azure regioonalle. Tässä esimerkissä käytämme resource grouppia nimeltä “wvd-demo” joka sijaitsee north europe regioonalla. Kyseistä resource grouppia käytetään ADDS ja WVD palveluille</p>
+<p>2. Luodaan Active Directory Domain Services palvelu. Siirry ylemmästä tiedostolistausesta ADDS kansioon ja etene ohjeen mukaan.</p>
+<p>3. Kun ADDS on luotu tulee ADDS palvelun mukana luotuun Vnet-verkkoon muuttaa DNS-palvelut niin että ADDS:n luoman domainin nimipalvelimet toimivat.</p>
+<p>4. Luo domainjoiner@#valitsemasidomain#.onmicrosoft.com käyttäjä. Muista resetoida käyttäjän salasana luomisen jälkeen.</p>
+<p>5. Luodaan HostPool Windows Virtual Desktop palvelulle. Siirry ylemmästä tiedostolistausesta HostPool kansioon ja etene ohjeen mukaan.</p>
+<p>6. Luodaan Virtuaalikoneet. Siirry ylemmästä tiedostolistausesta VMs kansioon ja etene ohjeen mukaan.
