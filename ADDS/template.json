@@ -3,40 +3,57 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "apiVersion": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "2020-01-01"
         },
         "sku": {
             "type": "string"
         },
         "domainConfigurationType": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "FullySynced"
         },
         "domainName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "saunakeisari.onmicrosoft.com"
         },
         "filteredSync": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "Disabled"
         },
         "location": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "northeurope"
         },
         "notificationSettings": {
-            "type": "object"
+            "type": "object",
+            "defaultValue": {
+                "notifyGlobalAdmins": "Enabled",
+                "notifyDcAdmins": "Enabled",
+                "additionalRecipients": []
+            }
         },
         "subnetName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "aadds-subnet"
         },
         "vnetName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "aadds-vnet"
         },
         "vnetAddressPrefixes": {
-            "type": "array"
+            "type": "array",
+            "defaultValue":[
+                "10.0.0.0/24"
+            ]
         },
         "subnetAddressPrefix": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "10.0.0.0/24"
         },
         "nsgName": {
-            "type": "string"
+            "type": "string",
+            "defaultValue": "aadds-nsg"
         }
         
     },
