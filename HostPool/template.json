@@ -17,7 +17,8 @@
             }
         },
         "hostpoolName": {
-            "type": "String",
+            "type": "String",,
+            "defaultValue": "wvd-demo",
             "metadata": {
                 "description": "The name of the Hostpool to be created."
             }
@@ -30,7 +31,7 @@
             }
         },
         "hostpoolDescription": {
-            "defaultValue": "",
+            "defaultValue": "Created through the WVD extension",
             "type": "String",
             "metadata": {
                 "description": "The description of the Hostpool to be created."
@@ -38,26 +39,27 @@
         },
         "location": {
             "type": "String",
+            "defaultValue": "eastus",
             "metadata": {
                 "description": "The location where the resources will be deployed."
             }
         },
         "workSpaceName": {
-            "defaultValue": "",
+            "defaultValue": "wvdworkspace",
             "type": "String",
             "metadata": {
                 "description": "The name of the workspace to be attach to new Applicaiton Group."
             }
         },
         "workspaceLocation": {
-            "defaultValue": "",
+            "defaultValue": "eastus",
             "type": "String",
             "metadata": {
                 "description": "The location of the workspace."
             }
         },
         "workspaceResourceGroup": {
-            "defaultValue": "",
+            "defaultValue": "wvd-demo",
             "type": "String",
             "metadata": {
                 "description": "The workspace resource group Name."
@@ -72,6 +74,7 @@
         },
         "addToWorkspace": {
             "type": "Bool",
+            "defaultValue": "true",
             "metadata": {
                 "description": "Whether to add applicationGroup to workspace."
             }
@@ -332,6 +335,7 @@
             }
         },
         "tokenExpirationTime": {
+            "defaultValue": "2020-10-02T18:03:44.395Z",
             "type": "String",
             "metadata": {
                 "description": "Hostpool token expiration time"
