@@ -3,59 +3,42 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "apiVersion": {
-            "value": "2020-01-01",
             "type": "string"
         },
         "sku": {
-            "value": "Standard",
             "type": "string"
         },
         "domainConfigurationType": {
-            "value": "FullySynced",
             "type": "string"
         },
         "domainName": {
-            "value": "saunakeisari.onmicrosoft.com",
             "type": "string"
         },
         "filteredSync": {
-            "value": "Disabled",
             "type": "string"
         },
         "location": {
-            "value": "northeurope",
             "type": "string"
         },
         "notificationSettings": {
-            "value": {
-                "notifyGlobalAdmins": "Enabled",
-                "notifyDcAdmins": "Enabled",
-                "additionalRecipients": []
-            },
             "type": "object"
         },
         "subnetName": {
-            "value": "aadds-subnet",
             "type": "string"
         },
         "vnetName": {
-            "value": "aadds-vnet",
             "type": "string"
         },
         "vnetAddressPrefixes": {
-            "value": [
-                "10.0.0.0/24"
-            ],
             "type": "array"
         },
         "subnetAddressPrefix": {
-            "value": "10.0.0.0/24",
             "type": "string"
         },
         "nsgName": {
-            "value": "aadds-nsg",
             "type": "string"
         }
+        
     },
     "resources": [
         {
