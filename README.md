@@ -14,3 +14,5 @@
 <p>2. Luodaan Active Directory Domain Services palvelu. Siirry ylemmästä tiedostolistausesta ADDS kansioon ja etene ohjeen mukaan.</p>
 <p>3. Kun ADDS on luotu tulee ADDS palvelun mukana luotuun Vnet-verkkoon muuttaa DNS-palvelut niin että ADDS:n luoman domainin nimipalvelimet toimivat.</p>
 <p>4. Luo domainjoiner@#valitsemasidomain#.onmicrosoft.com käyttäjä. Muista resetoida käyttäjän salasana luomisen jälkeen.</p>
+<p>5. Luodaan HostPool Windows Virtual Desktop palvelulle. Siirry ylemmästä tiedostolistausesta HostPool kansioon ja etene ohjeen mukaan.</p>
+<p>6. Luodaan Virtuaalikoneet. Siirry ylemmästä tiedostolistausesta VMs kansioon ja etene ohjeen mukaan.
