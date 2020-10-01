@@ -7,7 +7,8 @@
             "defaultValue": "2020-01-01"
         },
         "sku": {
-            "type": "string"
+            "type": "string",
+            "defaultValue":  "Standard"
         },
         "domainConfigurationType": {
             "type": "string",
@@ -15,7 +16,7 @@
         },
         "domainName": {
             "type": "string",
-            "defaultValue": "saunakeisari.onmicrosoft.com"
+            "defaultValue": "KORVAAMINUT.onmicrosoft.com"
         },
         "filteredSync": {
             "type": "string",
