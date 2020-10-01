@@ -17,6 +17,7 @@
             "defaultValue": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration.zip"
         },
         "hostpoolName": {
+            "defaultValue": "wvd-demo",
             "type": "string",
             "metadata": {
                 "description": "The name of the Hostpool to be created."
@@ -33,21 +34,49 @@
             "metadata": {
                 "description": "The resource group of the host pool to be updated. Used when the host pool was created empty."
             },
-            "defaultValue": ""
+            "defaultValue": "wvd-demo"
         },
         "hostpoolLocation": {
             "type": "string",
             "metadata": {
                 "description": "The location of the host pool to be updated. Used when the host pool was created empty."
             },
-            "defaultValue": ""
+            "defaultValue": "eastus"
         },
         "hostpoolProperties": {
             "type": "object",
+            "defaultValue": {
+                "friendlyName": null,
+                "description": "Created through the WVD extension",
+                "hostPoolType": "Pooled",
+                "personalDesktopAssignmentType": null,
+                "applicationGroupReferences": [
+                    "/subscriptions/325c2bca-17fa-4728-8ccd-537cf7bb3141/resourcegroups/wvd-demo/providers/Microsoft.DesktopVirtualization/applicationgroups/wvd-demo-DAG"
+                ],
+                "customRdpProperty": "",
+                "maxSessionLimit": 2,
+                "loadBalancerType": "BreadthFirst",
+                "validationEnvironment": false,
+                "ring": null,
+                "registrationInfo": {
+                    "expirationTime": "2020-09-30T11:24:50.084Z",
+                    "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4MkNGNDc0MzUwRkU3MkY5M0E2NzczOEFBRjQ0Qzg4QkFFMjI0QUIiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6ImExMmFlMDNhLWVhZmYtNDYxNy1iZDRhLWQ2MjU3MjExZGU3NCIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11cy1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLXVzLXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNWQ5MDY5MWQtYThiMS00OGI0LWIwYjctMDE2YWM1YTJhZDVhIiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJVUyIsIm5iZiI6MTYwMTQ2MDc4MSwiZXhwIjoxNjAxNDY1MDkwLCJpc3MiOiJSREluZnJhVG9rZW5NYW5hZ2VyIiwiYXVkIjoiUkRtaSJ9.YSNvhqrYR4haCilpQ2ufUMupEzad8CxTsFvIiJ_UujnyYeM7NlUsyTOkPhhxfq1DI0AhNR-F303l_8wa-r0asftPNIUX5iO4yWSyQn5-s_kQDZWLGoGMpsOu9I9kdVcAcOIr_A-hNOmQh99qM7PqCzPsUnRoud6vLxIYLDva2J0MD7sLUThoZ4vVJ9mOVbO_xsoI86thc96_6hun6rhPOdz9fDjfdLZYlzKKfRBnWV40BOqAXHqOtLgWB2zzBgK30zsVYu9lA1HIb0RVzERvw1s1bPG5LKkCfj_iNI_Zy6p7dA7f23F7cFT1Co3RALAAY2Yh16XhvhYTFB-lqaGgBw",
+                    "resetToken": false,
+                    "registrationTokenOperation": "None"
+                },
+                "vmTemplate": "{\"domain\":\"saunakeisari.onmicrosoft.com\",\"galleryImageOffer\":\"Windows-10\",\"galleryImagePublisher\":\"MicrosoftWindowsDesktop\",\"galleryImageSKU\":\"19h2-evd\",\"imageType\":\"Gallery\",\"imageUri\":null,\"customImageId\":null,\"namePrefix\":\"wvd-hosti\",\"osDiskType\":\"Standard_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_D2s_v3\",\"cores\":2,\"ram\":8},\"galleryItemId\":\"Microsoftwindowsdesktop.windows-1019h2-evd\"}",
+                "preferredAppGroupType": "Desktop",
+                "migrationRequest": null,
+                "cloudPcResource": false,
+                "ssoadfsAuthority": null,
+                "ssoClientId": null,
+                "ssoClientSecretKeyVaultPath": null,
+                "ssoSecretType": null,
+                "objectId": "5d90691d-a8b1-48b4-b0b7-016ac5a2ad5a"
+            },
             "metadata": {
                 "description": "The properties of the Hostpool to be updated. Used when the host pool was created empty."
-            },
-            "defaultValue": {}
+            }
         },
         "vmTemplate": {
             "type": "string",
@@ -57,6 +86,7 @@
             "defaultValue": ""
         },
         "administratorAccountUsername": {
+            "defaultValue": "domainjoiner@saunakeisari.onmicrosoft.com",
             "type": "string",
             "metadata": {
                 "description": "A username in the domain that has privileges to join the session hosts to the domain. For example, 'user1@contoso.com'."
@@ -70,42 +100,49 @@
         },
         "createAvailabilitySet": {
             "type": "bool",
+            "defaultValue": true,
             "metadata": {
                 "description": "Whether to create a new availability set for the VMs"
             }
         },
         "vmResourceGroup": {
             "type": "string",
+            "defaultValue": "wvd-demo",
             "metadata": {
                 "description": "The resource group of the session host VMs."
             }
         },
         "vmLocation": {
             "type": "string",
+            "defaultValue": "northeurope",
             "metadata": {
                 "description": "The location of the session host VMs."
             }
         },
         "vmSize": {
             "type": "string",
+            "defaultValue": "Standard_D2s_v3",
             "metadata": {
                 "description": "The size of the session host VMs."
             }
         },
         "vmInitialNumber": {
             "type": "int",
+            "defaultValue": 0,
             "metadata": {
                 "description": "VM name prefix initial number."
             }
         },
         "vmNumberOfInstances": {
             "type": "int",
+            "defaultValue": 2,
             "metadata": {
                 "description": "Number of session hosts that will be created and added to the hostpool."
             }
         },
         "vmNamePrefix": {
             "type": "string",
+            "defaultValue": "wvd-host-",
             "metadata": {
                 "description": "This prefix will be used in combination with the VM number to create the VM name. If using 'rdsh' as the prefix, VMs would be named 'rdsh-0', 'rdsh-1', etc. You should use a unique prefix to reduce name collisions in Active Directory."
             }
@@ -128,21 +165,21 @@
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image Offer."
             },
-            "defaultValue": ""
+            "defaultValue": "Windows-10"
         },
         "vmGalleryImagePublisher": {
             "type": "string",
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image Publisher."
             },
-            "defaultValue": ""
+            "defaultValue": "MicrosoftWindowsDesktop"
         },
         "vmGalleryImageSKU": {
             "type": "string",
             "metadata": {
                 "description": "(Required when vmImageType = Gallery) Gallery image SKU."
             },
-            "defaultValue": ""
+            "defaultValue": "19h2-evd"
         },
         "vmImageVhdUri": {
             "type": "string",
@@ -160,6 +197,7 @@
         },
         "vmDiskType": {
             "type": "string",
+            "defaultValue": "Standard_LRS",
             "allowedValues": [
                 "UltraSSD_LRS",
                 "Premium_LRS",
@@ -172,6 +210,7 @@
         },
         "vmUseManagedDisks": {
             "type": "bool",
+            "defaultValue": true,
             "metadata": {
                 "description": "True indicating you would like to use managed disks or false indicating you would like to use unmanaged disks."
             }
@@ -185,18 +224,21 @@
         },
         "existingVnetName": {
             "type": "string",
+            "defaultValue": "aadds-vnet",
             "metadata": {
                 "description": "The name of the virtual network the VMs will be connected to."
             }
         },
         "existingSubnetName": {
             "type": "string",
+            "defaultValue": "aadds-subnet",
             "metadata": {
                 "description": "The subnet the VMs will be placed in."
             }
         },
         "virtualNetworkResourceGroupName": {
             "type": "string",
+            "defaultValue": "wvd-demo",
             "metadata": {
                 "description": "The resource group containing the existing virtual network."
             }
@@ -319,7 +361,7 @@
             "metadata": {
                 "description": "Domain to join"
             },
-            "defaultValue": ""
+            "defaultValue": "saunakeisari.onmicrosoft.com"
         }
     },
     "variables": {
