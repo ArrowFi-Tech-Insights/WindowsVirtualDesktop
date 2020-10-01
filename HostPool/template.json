@@ -17,7 +17,7 @@
             }
         },
         "hostpoolName": {
-            "type": "String",,
+            "type": "String",
             "defaultValue": "wvd-demo",
             "metadata": {
                 "description": "The name of the Hostpool to be created."
