@@ -1,5 +1,8 @@
 <h1>Arrow Tech Insights: Windows Virtual Desktop</h1>
 `<iframe width="560" height="315" src="https://www.youtube.com/embed/30dOLcZ4_9U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+{% include youtubePlayer.html id=page."30dOLcZ4_9U" %}
+
 <p>Tästä Github repositorystä löytyy toteutus Windows Virtual Desktop demoympäristölle.</p>
 <p>Labrassa käytettävät Azure palvelut ja niiden hinnat.</p>
 
