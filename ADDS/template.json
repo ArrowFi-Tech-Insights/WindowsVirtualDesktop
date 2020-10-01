@@ -3,46 +3,58 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "apiVersion": {
-            "value": "2020-01-01"
+            "value": "2020-01-01",
+            "type": "string"
         },
         "sku": {
-            "value": "Standard"
+            "value": "Standard",
+            "type": "string"
         },
         "domainConfigurationType": {
-            "value": "FullySynced"
+            "value": "FullySynced",
+            "type": "string"
         },
         "domainName": {
-            "value": "saunakeisari.onmicrosoft.com"
+            "value": "saunakeisari.onmicrosoft.com",
+            "type": "string"
         },
         "filteredSync": {
-            "value": "Disabled"
+            "value": "Disabled",
+            "type": "string"
         },
         "location": {
-            "value": "northeurope"
+            "value": "northeurope",
+            "type": "string"
         },
         "notificationSettings": {
             "value": {
                 "notifyGlobalAdmins": "Enabled",
                 "notifyDcAdmins": "Enabled",
                 "additionalRecipients": []
-            }
+            },
+            "type": "object"
         },
         "subnetName": {
-            "value": "aadds-subnet"
+            "value": "aadds-subnet",
+            "type": "string"
         },
         "vnetName": {
-            "value": "aadds-vnet"
+            "value": "aadds-vnet",
+            "type": "string"
         },
         "vnetAddressPrefixes": {
             "value": [
                 "10.0.0.0/24"
-            ]
+            ],
+            "type": "array"
         },
         "subnetAddressPrefix": {
-            "value": "10.0.0.0/24"
+            "value": "10.0.0.0/24",
+            "type": "string"
         },
         "nsgName": {
-            "value": "aadds-nsg"
+            "value": "aadds-nsg",
+            "type": "string"
         }
     },
     "resources": [
