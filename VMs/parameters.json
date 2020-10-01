@@ -1,0 +1,142 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_9-11-2020.zip"
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://catalogartifact.azureedge.net/publicartifacts/Microsoft.Hostpool-ARM-1.0.15-preview/"
+        },
+        "hostpoolName": {
+            "value": "wvd-demo"
+        },
+        "hostpoolToken": {
+            "value": null
+        },
+        "administratorAccountUsername": {
+            "value": "domainjoiner@saunakeisari.onmicrosoft.com"
+        },
+        "administratorAccountPassword": {
+            "value": null
+        },
+        "hostpoolResourceGroup": {
+            "value": "wvd-demo"
+        },
+        "hostpoolProperties": {
+            "value": {
+                "friendlyName": null,
+                "description": "Created through the WVD extension",
+                "hostPoolType": "Pooled",
+                "personalDesktopAssignmentType": null,
+                "applicationGroupReferences": [
+                    "/subscriptions/325c2bca-17fa-4728-8ccd-537cf7bb3141/resourcegroups/wvd-demo/providers/Microsoft.DesktopVirtualization/applicationgroups/wvd-demo-DAG"
+                ],
+                "customRdpProperty": "",
+                "maxSessionLimit": 2,
+                "loadBalancerType": "BreadthFirst",
+                "validationEnvironment": false,
+                "ring": null,
+                "registrationInfo": {
+                    "expirationTime": "2020-09-30T11:24:50.084Z",
+                    "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc4MkNGNDc0MzUwRkU3MkY5M0E2NzczOEFBRjQ0Qzg4QkFFMjI0QUIiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6ImExMmFlMDNhLWVhZmYtNDYxNy1iZDRhLWQ2MjU3MjExZGU3NCIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11cy1yMC53dmQubWljcm9zb2Z0LmNvbS8iLCJEaWFnbm9zdGljc1VyaSI6Imh0dHBzOi8vcmRkaWFnbm9zdGljcy1nLXVzLXIwLnd2ZC5taWNyb3NvZnQuY29tLyIsIkVuZHBvaW50UG9vbElkIjoiNWQ5MDY5MWQtYThiMS00OGI0LWIwYjctMDE2YWM1YTJhZDVhIiwiR2xvYmFsQnJva2VyVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci53dmQubWljcm9zb2Z0LmNvbS8iLCJHZW9ncmFwaHkiOiJVUyIsIm5iZiI6MTYwMTQ2MDc4MSwiZXhwIjoxNjAxNDY1MDkwLCJpc3MiOiJSREluZnJhVG9rZW5NYW5hZ2VyIiwiYXVkIjoiUkRtaSJ9.YSNvhqrYR4haCilpQ2ufUMupEzad8CxTsFvIiJ_UujnyYeM7NlUsyTOkPhhxfq1DI0AhNR-F303l_8wa-r0asftPNIUX5iO4yWSyQn5-s_kQDZWLGoGMpsOu9I9kdVcAcOIr_A-hNOmQh99qM7PqCzPsUnRoud6vLxIYLDva2J0MD7sLUThoZ4vVJ9mOVbO_xsoI86thc96_6hun6rhPOdz9fDjfdLZYlzKKfRBnWV40BOqAXHqOtLgWB2zzBgK30zsVYu9lA1HIb0RVzERvw1s1bPG5LKkCfj_iNI_Zy6p7dA7f23F7cFT1Co3RALAAY2Yh16XhvhYTFB-lqaGgBw",
+                    "resetToken": false,
+                    "registrationTokenOperation": "None"
+                },
+                "vmTemplate": "{\"domain\":\"saunakeisari.onmicrosoft.com\",\"galleryImageOffer\":\"Windows-10\",\"galleryImagePublisher\":\"MicrosoftWindowsDesktop\",\"galleryImageSKU\":\"19h2-evd\",\"imageType\":\"Gallery\",\"imageUri\":null,\"customImageId\":null,\"namePrefix\":\"wvd-hosti\",\"osDiskType\":\"Standard_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_D2s_v3\",\"cores\":2,\"ram\":8},\"galleryItemId\":\"Microsoftwindowsdesktop.windows-1019h2-evd\"}",
+                "preferredAppGroupType": "Desktop",
+                "migrationRequest": null,
+                "cloudPcResource": false,
+                "ssoadfsAuthority": null,
+                "ssoClientId": null,
+                "ssoClientSecretKeyVaultPath": null,
+                "ssoSecretType": null,
+                "objectId": "5d90691d-a8b1-48b4-b0b7-016ac5a2ad5a"
+            }
+        },
+        "hostpoolLocation": {
+            "value": "eastus"
+        },
+        "createAvailabilitySet": {
+            "value": true
+        },
+        "vmInitialNumber": {
+            "value": 0
+        },
+        "vmResourceGroup": {
+            "value": "wvd-demo"
+        },
+        "vmLocation": {
+            "value": "northeurope"
+        },
+        "vmSize": {
+            "value": "Standard_D2s_v3"
+        },
+        "vmNumberOfInstances": {
+            "value": 2
+        },
+        "vmNamePrefix": {
+            "value": "wvd-hosti"
+        },
+        "vmImageType": {
+            "value": "Gallery"
+        },
+        "vmDiskType": {
+            "value": "Standard_LRS"
+        },
+        "vmUseManagedDisks": {
+            "value": true
+        },
+        "existingVnetName": {
+            "value": "aadds-vnet"
+        },
+        "existingSubnetName": {
+            "value": "aadds-subnet"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "wvd-demo"
+        },
+        "usePublicIP": {
+            "value": false
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "domain": {
+            "value": "saunakeisari.onmicrosoft.com"
+        },
+        "availabilitySetTags": {
+            "value": {}
+        },
+        "networkInterfaceTags": {
+            "value": {}
+        },
+        "networkSecurityGroupTags": {
+            "value": {}
+        },
+        "publicIPAddressTags": {
+            "value": {}
+        },
+        "virtualMachineTags": {
+            "value": {}
+        },
+        "imageTags": {
+            "value": {}
+        },
+        "deploymentId": {
+            "value": "b896099f-c9ba-4c54-8e1a-691f539ff032"
+        },
+        "apiVersion": {
+            "value": "2019-12-10-preview"
+        },
+        "vmGalleryImageOffer": {
+            "value": "Windows-10"
+        },
+        "vmGalleryImagePublisher": {
+            "value": "MicrosoftWindowsDesktop"
+        },
+        "vmGalleryImageSKU": {
+            "value": "19h2-evd"
+        }
+    }
+}
