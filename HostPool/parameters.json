@@ -29,134 +29,11 @@
         "workspaceResourceGroup": {
             "value": "wvd-demo"
         },
-        "allApplicationGroupReferences": {
-            "value": ""
-        },
-        "addToWorkspace": {
+       "addToWorkspace": {
             "value": true
-        },
-        "administratorAccountUsername": {
-            "value": ""
-        },
-        "administratorAccountPassword": {
-            "value": null
-        },
-        "createAvailabilitySet": {
-            "value": false
-        },
-        "vmResourceGroup": {
-            "value": ""
-        },
-        "vmLocation": {
-            "value": ""
-        },
-        "vmSize": {
-            "value": ""
-        },
-        "vmNumberOfInstances": {
-            "value": 0
-        },
-        "vmNamePrefix": {
-            "value": ""
-        },
-        "vmImageType": {
-            "value": "Gallery"
-        },
-        "vmGalleryImageOffer": {
-            "value": ""
-        },
-        "vmGalleryImagePublisher": {
-            "value": ""
-        },
-        "vmGalleryImageSKU": {
-            "value": ""
-        },
-        "vmImageVhdUri": {
-            "value": ""
-        },
-        "vmCustomImageSourceId": {
-            "value": ""
-        },
-        "vmDiskType": {
-            "value": "StandardSSD_LRS"
-        },
-        "vmUseManagedDisks": {
-            "value": true
-        },
-        "storageAccountResourceGroupName": {
-            "value": ""
-        },
-        "existingVnetName": {
-            "value": ""
-        },
-        "existingSubnetName": {
-            "value": ""
-        },
-        "virtualNetworkResourceGroupName": {
-            "value": ""
-        },
-        "usePublicIP": {
-            "value": false
-        },
-        "publicIpAddressSku": {
-            "value": "Basic"
-        },
-        "publicIpAddressType": {
-            "value": "Dynamic"
-        },
-        "createNetworkSecurityGroup": {
-            "value": false
-        },
-        "networkSecurityGroupId": {
-            "value": ""
-        },
-        "networkSecurityGroupRules": {
-            "value": []
-        },
-        "hostpoolType": {
-            "value": "Pooled"
-        },
-        "personalDesktopAssignmentType": {
-            "value": ""
-        },
-        "maxSessionLimit": {
-            "value": 2
-        },
-        "loadBalancerType": {
-            "value": "BreadthFirst"
-        },
-        "customRdpProperty": {
-            "value": ""
-        },
-        "vmTemplate": {
-            "value": ""
         },
         "tokenExpirationTime": {
             "value": "2020-10-01T18:03:44.395Z"
-        },
-        "hostpoolTags": {
-            "value": {}
-        },
-        "applicationGroupTags": {
-            "value": {}
-        },
-        "availabilitySetTags": {
-            "value": {}
-        },
-        "networkInterfaceTags": {
-            "value": {}
-        },
-        "networkSecurityGroupTags": {
-            "value": {}
-        },
-        "publicIPAddressTags": {
-            "value": {}
-        },
-        "virtualMachineTags": {
-            "value": {}
-        },
-        "imageTags": {
-            "value": {}
         },
         "apiVersion": {
             "value": "2019-12-10-preview"
@@ -169,12 +46,6 @@
         },
         "preferredAppGroupType": {
             "value": "Desktop"
-        },
-        "ouPath": {
-            "value": ""
-        },
-        "domain": {
-            "value": ""
         }
     }
 }
