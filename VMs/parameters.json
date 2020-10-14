@@ -15,7 +15,7 @@
             "value": null
         },
         "administratorAccountUsername": {
-            "value": "domainjoiner@saunakeisari.onmicrosoft.com"
+            "value": "domainjoiner@KORVAAMINUT.onmicrosoft.com"
         },
         "administratorAccountPassword": {
             "value": null
@@ -103,7 +103,7 @@
             "value": false
         },
         "domain": {
-            "value": "saunakeisari.onmicrosoft.com"
+            "value": "KORVAAMINUT.onmicrosoft.com"
         },
         "availabilitySetTags": {
             "value": {}
