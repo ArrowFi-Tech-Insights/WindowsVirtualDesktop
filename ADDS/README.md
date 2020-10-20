@@ -18,8 +18,9 @@
 </ul>
 <h3>2. Templaten provisioinnin jälkeen</h3>
 <p>HUOM!. Vaikka template ilmoittaa provisiointiprosession olevan valmis, ei domain ole vielä provisioitunut kokonaisuudessaan. Domainin tilan näet Azure AD Domain Servicesin alta "Overview" ja "Health" osiosta. Odota että domain on provisioitunut kokonaan ennen kuin menet eteenpäin</p>
+<h3>3. Domain käyttäjä</h3>
 <p>Kun domain on provisioitunut kokonaisuudessaan, tee domainiin uusi käyttäjä nimeltä domainjoiner. Kun käyttäjä on luotu kirjaudu käyttäjän väliaikaisella salasanalla myapps.microsoft.com portaaliin ja vaihda salasana kirjautumisen yhteydessä. Tätä salasanaa tarvitaan kun provisioidaan session host virtuaalikoneet ja liitetään ne domainiin.</p>
-<h3>DNS asetukset</h3>
-<p>3. Muokkaa ADDS:n luoman Vnet DNS-asetuksia lisäämällä DNS-palvelimiksi ADDS-palvelun käyttämien verkko-interfacejen IP-osoitteet. Kyseiset osoitteet löydät aadds-vnet Vnetin Connected devices kohdasta. Tällä hetkellä aadds-vnet:issä ei ole muita verkko-interfaceja kuin ADDS:n käyttämät.</p>
+<h3>4. DNS asetukset</h3>
+<p>Muokkaa ADDS:n luoman Vnet DNS-asetuksia lisäämällä DNS-palvelimiksi ADDS-palvelun käyttämien verkko-interfacejen IP-osoitteet. Kyseiset osoitteet löydät aadds-vnet Vnetin Connected devices kohdasta. Tällä hetkellä aadds-vnet:issä ei ole muita verkko-interfaceja kuin ADDS:n käyttämät.</p>
 <p>Jos muutit verkkojen nimiä templatessa, niin käytä muutettamiasi nimiä kun provisiot session host virtuaalikoneet.</p>
 
