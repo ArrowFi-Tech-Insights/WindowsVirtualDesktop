@@ -1,7 +1,14 @@
 <h1>Azure Active Directory Domain Services</h1>
 
 <p>Tämä template luo Azure Active Directory Domain Services (myöhemmin ADDS) palvelun johon synkronoidaan käyttäjät ja ryhmät Azure AD:sta. Vanhat käyttäjät eivät synkronoidu ellei salasanaa resetoida. ADDS on esikonfigutoitu niin että siihen synkronoidaan koko AzureAD. ADDS:n Sku on Standard ja regioona North Europe</p>
-<p>Muokkaa oma domainisi "Domain Name"-kohtaan.<p>
+<p>Templaten provisiointi
+
+<ul>
+<li>Valitse haluamasi Subscription ja luomasi resource group</li>
+<li>Muokkaa oma domainisi "Domain Name"-kohtaan.</li>
+<li>Muut parametrit voit jättää muokkaamatta</li>
+</ul>
+</p>
 <p>Resurssit jotka template provisioi:
 <ul>
 <li>ADDS-palvelu (Sku: Standard)</li>
