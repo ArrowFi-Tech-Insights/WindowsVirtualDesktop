@@ -4,8 +4,7 @@
 <ul>
 <li>Session host virtuaalikoneet</li>
 <li>Verkkointerfacet</li>
-<li></li>
-<li></li>
+
 </ul>
 <p>Session host-koneet liitetään luotuun Azure Active Directory Services domainiin ja session host-koneiden verkko-interfacet liitetään domainin network security grouppiin.</p> 
 
