@@ -24,3 +24,4 @@
 <p>Muokkaa ADDS:n luoman Vnet DNS-asetuksia lisäämällä DNS-palvelimiksi ADDS-palvelun käyttämien verkko-interfacejen IP-osoitteet. Kyseiset osoitteet löydät aadds-vnet Vnetin Connected devices kohdasta. Tällä hetkellä aadds-vnet:issä ei ole muita verkko-interfaceja kuin ADDS:n käyttämät.</p>
 <p>Jos muutit verkkojen nimiä templatessa, niin käytä muutettamiasi nimiä kun provisiot session host virtuaalikoneet.</p>
 
+<p><a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/HostPool">Siirry luomaan Host pool</a></p>
