@@ -9,18 +9,18 @@
 </ul>
 </p>
 <p>Tässä esimerkissä käytetään "pooled"-hostpoolia</p>
-<h1>Application Group</h1>
+<h2>Application Group</h2>
 <p>Application group on looginen kokoelma session host virtuaalikoneille asennetuista sovelluksista. Application grouppeja on kahta eri tyyppiä<p>
 <ul>
 <li>Desktop. Käyttäjät saavat pääsyn työpöydälle.</li>
 <li>RemoteApp. Käyttäjäy saavat pääsyn vain määritetylle sovellukselle.</li>
 </ul>
-<p>Application Groupeissa määritellään myös käyttäjien sovelluskohtaiset käyttöoikeidet<7p>
+<p>Application Groupeissa määritellään myös käyttäjien sovelluskohtaiset käyttöoikeidet</p>
 
-<h1>Workspace</h1>
+<h2>Workspace</h2>
 <p>Workspace on looginen kokoelma application grouppeja. Jokaisen application groupin tulee olla liitettynä workspaceen jotta käyttäjät saa pääsyn sovelluksiin</p>
 
-</p>
+<h2>Templaten provisiointi</h2>
 
 <p>Tällä hetkellä ainostaan Azuren US-regioonat ovat tuettuja Hostpoolien kanssa. Esimerkissä käytämme eastus regioonaa</p>
 <p>Ennen kuin provisioint templaten, muokkaa "Token Expiration Time" parametria niin että päivämäärä on tästä päivästa + 30 päivän sisään. Parametri määrittää hostpoolin rekisteröintiavaimen expiroitumispäivän. Muut parametrit voit jättää oletus arvoille.</p>
