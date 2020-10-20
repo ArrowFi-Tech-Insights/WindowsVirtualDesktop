@@ -8,7 +8,7 @@
 <li>Pooled. Session hostit jaetaan useamman käyttäjän kesken.</li>
 </ul>
 </p>
-<p>Tässä esimerkissä käytetään "pooled"-hostpoolia</p>
+<p>Tässä esimerkissä käytetään "pooled"-host poolia</p>
 <h2>Application Group</h2>
 <p>Application group on looginen kokoelma session host virtuaalikoneille asennetuista sovelluksista. Application grouppeja on kahta eri tyyppiä<p>
 <ul>
@@ -22,11 +22,12 @@
 
 <h2>Templaten provisiointi</h2>
 
-<p>Tällä hetkellä ainostaan Azuren US-regioonat ovat tuettuja Hostpoolien kanssa. Esimerkissä käytämme eastus regioonaa</p>
-<p>Ennen kuin provisioit templaten, muokkaa "Token Expiration Time" parametria niin että päivämäärä on tästä päivästa + 30 päivän sisään. Parametri määrittää hostpoolin rekisteröintiavaimen expiroitumispäivän. Muut parametrit voit jättää oletusarvoille.</p>
+<p>Valitse Subscription ja Resource group.</p>
+<p>Tällä hetkellä ainostaan Azuren US-regioonat ovat tuettuja Host poolien kanssa. Esimerkissä käytämme eastus regioonaa</p>
+<p>Ennen kuin provisioit templaten, muokkaa "Token Expiration Time" parametria niin että päivämäärä on tästä päivästa + 30 päivän sisään. Parametri määrittää host poolin rekisteröintiavaimen expiroitumispäivän. Muut parametrit voit jättää oletusarvoille.</p>
 <p>Resurssit jotka template provisioi:</p>
 <ul>
-<li>Hostpool (pooled)</li>
+<li>Host pool (pooled)</li>
 <li>Application Group </li>
 <li>Workspace</li>
 </ul>

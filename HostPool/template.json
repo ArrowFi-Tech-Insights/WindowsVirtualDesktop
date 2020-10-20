@@ -103,10 +103,10 @@
             }
         },
         "maxSessionLimit": {
-            "defaultValue": 99999,
+            "defaultValue": 2,
             "type": "Int",
             "metadata": {
-                "description": "Maximum number of sessions."
+                "description": "Maximum number of sessions per host."
             }
         },
         "loadBalancerType": {
