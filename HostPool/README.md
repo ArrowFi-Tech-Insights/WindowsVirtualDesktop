@@ -23,9 +23,8 @@
 <h2>Templaten provisiointi</h2>
 
 <p>Tällä hetkellä ainostaan Azuren US-regioonat ovat tuettuja Hostpoolien kanssa. Esimerkissä käytämme eastus regioonaa</p>
-<p>Ennen kuin provisioint templaten, muokkaa "Token Expiration Time" parametria niin että päivämäärä on tästä päivästa + 30 päivän sisään. Parametri määrittää hostpoolin rekisteröintiavaimen expiroitumispäivän. Muut parametrit voit jättää oletus arvoille.</p>
-<p>
-Resurssit jotka template provisioi:
+<p>Ennen kuin provisioit templaten, muokkaa "Token Expiration Time" parametria niin että päivämäärä on tästä päivästa + 30 päivän sisään. Parametri määrittää hostpoolin rekisteröintiavaimen expiroitumispäivän. Muut parametrit voit jättää oletusarvoille.</p>
+<p>Resurssit jotka template provisioi:</p>
 <ul>
 <li>Hostpool (pooled)</li>
 <li>Application Group </li>
