@@ -2,6 +2,9 @@
 
 <p>Tämä template luo Azure Active Directory Domain Services (myöhemmin ADDS) palvelun johon synkronoidaan käyttäjät ja ryhmät Azure AD:sta. Vanhat käyttäjät eivät synkronoidu ellei salasanaa resetoida. ADDS on esikonfigutoitu niin että siihen synkronoidaan koko AzureAD. ADDS:n Sku on Standard ja regioona North Europe</p>
 <h3>1. Templaten provisiointi</h3>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FArrowFi-Tech-Insights%2FWvdDemo%2Fmaster%2FADDS%2Ftemplate.json" target="_blank">
+    <img src="https://aka.ms/deploytoazurebutton"/>
+
 <ul>
 <li>Valitse haluamasi Subscription ja luomasi resource group</li>
 <li>Muokkaa oma domainisi "Domain Name"-kohtaan.</li>
@@ -19,6 +22,4 @@
 <h3>DNS asetukset</h3>
 <p>3. Muokkaa ADDS:n luoman Vnet DNS-asetuksia lisäämällä DNS-palvelimiksi ADDS-palvelun käyttämien verkko-interfacejen IP-osoitteet. Kyseiset osoitteet löydät aadds-vnet Vnetin Connected devices kohdasta. Tällä hetkellä aadds-vnet:issä ei ole muita verkko-interfaceja kuin ADDS:n käyttämät.</p>
 <p>Jos muutit verkkojen nimiä templatessa, niin käytä muutettamiasi nimiä kun provisiot session host virtuaalikoneet.</p>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FArrowFi-Tech-Insights%2FWvdDemo%2Fmaster%2FADDS%2Ftemplate.json" target="_blank">
-    <img src="https://aka.ms/deploytoazurebutton"/>
 
