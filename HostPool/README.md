@@ -4,8 +4,7 @@
 <li>Application Group </li>
 <li>Workspace</li>
 </ul>
-<
-h2>Host pools</h2>
+<h2>Host pools</h2>
 
 <p>Host pool on kokoelma Azure virtuaali-koneista jotka toimivat Windows Virtual Desktop palvelussa session hosteina. Kaikkien samassa host poolissa sijaitsevien virtuaali-koneiden tulee pohjautua samaan käyttöjärjestelmä-imageen.</p>
 
