@@ -1,4 +1,11 @@
-<h2>Host pools</h2>
+<p>Resurssit jotka template provisioi:</p>
+<ul>
+<li>Host pool (pooled)</li>
+<li>Application Group </li>
+<li>Workspace</li>
+</ul>
+<
+h2>Host pools</h2>
 
 <p>Host pool on kokoelma Azure virtuaali-koneista jotka toimivat Windows Virtual Desktop palvelussa session hosteina. Kaikkien samassa host poolissa sijaitsevien virtuaali-koneiden tulee pohjautua samaan käyttöjärjestelmä-imageen.</p>
 
@@ -22,15 +29,12 @@
 
 <h2>Templaten provisiointi</h2>
 
-<p>Valitse Subscription ja Resource group.</p>
-<p>Tällä hetkellä ainostaan Azuren US-regioonat ovat tuettuja Host poolien kanssa. Esimerkissä käytämme eastus regioonaa</p>
-<p>Ennen kuin provisioit templaten, muokkaa "Token Expiration Time" parametria niin että päivämäärä on tästä päivästa + 30 päivän sisään. Parametri määrittää host poolin rekisteröintiavaimen expiroitumispäivän. Muut parametrit voit jättää oletusarvoille.</p>
-<p>Resurssit jotka template provisioi:</p>
-<ul>
-<li>Host pool (pooled)</li>
-<li>Application Group </li>
-<li>Workspace</li>
-</ul>
+<p>1. Valitse Subscription ja Resource group.</p>
+<p>Tällä hetkellä ainostaan Azuren US-regioonat ovat tuettuja Host poolien kanssa. Esimerkissä käytämme Host poolin osalta East US regioonaa. Muut resurssit provisioidaan North Europe regioonalle.</p>
+<p>2. Ennen kuin provisioit templaten, muokkaa "Token Expiration Time" parametria niin että päivämäärä on tästä päivästa + 30 päivän sisään. Parametri määrittää host poolin rekisteröintiavaimen expiroitumispäivän. Muut parametrit voit jättää oletusarvoille.</p>
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FArrowFi-Tech-Insights%2FWvdDemo%2Fmaster%2FHostPool%2Ftemplate.json" target="_blank">
     <img src="https://aka.ms/deploytoazurebutton"/> </a>
+
+<h2>Templaten provisioinnin jälkeen</h2>
+<p><a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/VMs">Siirry luomaan session host virtuaalikoneet.</a></p>
