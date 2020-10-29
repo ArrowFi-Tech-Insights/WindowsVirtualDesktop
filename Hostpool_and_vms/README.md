@@ -43,10 +43,14 @@
 " kohtaan käyttäjän salasana.</p>
 <p>3. Määritä "Vm Template" parametrin sisään valitsemasi domain.</p>
 <p>4. Muokkaa "Token Expiration Time" parametria niin että päivämäärä on tästä päivästa + 30 päivän sisään. Parametri määrittää host poolin rekisteröintiavaimen expiroitumispäivän.</p>
+<p>5. Määritä "Domain" parametriin valitsemasi domain.</p>
 <p>Muut parametrit voit jättää oletusarvoille.</p>
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FArrowFi-Tech-Insights%2FWvdDemo%2Fmaster%2FHostpool_and_vms%2Ftemplate.json" target="_blank">
     <img src="https://aka.ms/deploytoazurebutton"/> </a>
 
 <h2>Templaten provisioinnin jälkeen</h2>
-<p><a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/VMs">Siirry luomaan session host virtuaalikoneet.</a></p>
+<p>1. Luo AzureAD ryhmä. Käyttäjäryhmän jäsenet pääsevät käyttämään juuri luotua WVD ympäristöä. </a></p>
+<p>2. Luo testikäyttäjä ja lisää se juuri luomaasi ryhmään.
+<p>3. Liitä luomasi AzureAD ryhmä luomaasi Application Grouppiin. Search "Application groups" -> Valitse luomasi Application groups -> Valitse "Assigments" -> valitse +Add ja lisää luomasi AzureAD ryhmä.</p>
+<p>4. Kirjaudu Windows Virtual Desktop palvelun Workspaceen oheisen <a href="https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-10">ohjeen</a> mukaisesti 
