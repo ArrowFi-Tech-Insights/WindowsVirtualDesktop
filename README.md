@@ -13,6 +13,5 @@
 
 <p>1. Luo uusi resource group haluamallesi Azure regioonalle. Tässä esimerkissä käytämme resource grouppia nimeltä “wvd-demo” joka sijaitsee north europe regioonalla. Kyseistä resource grouppia käytetään ADDS ja WVD palveluille</p>
 <p>2. Luodaan Active Directory Domain Services palvelu. Siirry ylemmästä tiedostolistausesta <a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/ADDS">ADDS</a> kansioon ja etene ohjeen mukaan.</p>
-<p>3. Luodaan HostPool Windows Virtual Desktop palvelulle. Siirry ylemmästä tiedostolistausesta <a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/HostPool">HostPool</a> kansioon ja etene ohjeen mukaan.</p>
-<p>4. Luodaan Virtuaalikoneet. Siirry ylemmästä tiedostolistausesta <a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/VMs">VMs</a> kansioon ja etene ohjeen mukaan.</p>
-<p>5. Luo uusi Azure AD käyttäjä ja liitä se se Application Groupin assigments osiosta</p>
+<p>3. Luodaan HostPool Windows Virtual Desktop sekä Session Host virtuaalikoneet palvelulle. Siirry ylemmästä tiedostolistausesta <a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/Hostpool_and_vms">HostPool</a> kansioon ja etene ohjeen mukaan.</p>
+<p>4. Luo uusi Azure AD käyttäjä ja liitä se se Application Groupin assigments osiosta</p>

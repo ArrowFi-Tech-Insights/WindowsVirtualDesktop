@@ -1,6 +1,6 @@
 <h1>Azure Active Directory Domain Services</h1>
 
-<p>Tämä template luo Azure Active Directory Domain Services (myöhemmin ADDS) palvelun johon synkronoidaan käyttäjät ja ryhmät Azure AD:sta. Vanhat käyttäjät eivät synkronoidu ellei salasanaa resetoida. ADDS on esikonfigutoitu niin että siihen synkronoidaan koko AzureAD. ADDS:n Sku on Standard ja regioona North Europe</p>
+<p>Tämä template luo Azure Active Directory Domain Services (myöhemmin ADDS) palvelun johon synkronoidaan käyttäjät ja ryhmät Azure AD:sta. Vanhat käyttäjät eivät synkronoidu ellei salasanaa resetoida. ADDS on esikonfigutoitu templatessa niin että siihen synkronoidaan koko AzureAD. ADDS:n Sku on Standard ja regioona North Europe</p>
 <h3>1. Templaten provisiointi</h3>
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FArrowFi-Tech-Insights%2FWvdDemo%2Fmaster%2FADDS%2Ftemplate.json" target="_blank">
     <img src="https://aka.ms/deploytoazurebutton"/></a>
@@ -24,4 +24,4 @@
 <p>Muokkaa ADDS:n luoman Vnet DNS-asetuksia lisäämällä DNS-palvelimiksi ADDS-palvelun käyttämien verkko-interfacejen IP-osoitteet. Kyseiset osoitteet löydät aadds-vnet Vnetin Connected devices kohdasta. Tällä hetkellä aadds-vnet:issä ei ole muita verkko-interfaceja kuin ADDS:n käyttämät.</p>
 <p>Jos muutit verkkojen nimiä templatessa, niin käytä muutettamiasi nimiä kun provisiot session host virtuaalikoneet.</p>
 
-<p><a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/HostPool">Siirry luomaan Host pool</a></p>
+<p><a href="https://github.com/ArrowFi-Tech-Insights/WindowsVirtualDesktop/tree/master/Hostpool_and_vms">Siirry luomaan Host pool ja Session Host virtuaalikoneet</a></p>
