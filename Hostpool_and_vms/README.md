@@ -1,4 +1,4 @@
-<p>Tämä template luo Windows Virtual Desktop palvelun hallintaelementit.</p>
+<p>Tämä template luo Windows Virtual Desktop palvelun hallintaelementit ja session host virtuaalikoneet.</p>
 <p>Windows Virtual Desktop palvelun hallintaelementit tukevat vain US regioonia tällä hetkellä joten esimerkissä sijoitamme ne eastus regioonalle. Session Host Virtuaalikoneet eivät ole sidottu US regioneihin ja ne sijoitetaan northeurope regioonalle.</p>
 <p>Resurssit jotka template provisioi:</p>
 <ul>
@@ -7,7 +7,7 @@
 <li>Workspace</li>
 <li>Session Host virtuaalikoneet</li>
 </ul>
-<p>Oletus parametrien mukaan template tekee pooled host poolin jossa session limit on 2 sessiota per session host virtuaalikone</p>
+<p>Oletus-parametrien mukaan template tekee pooled host poolin jossa session limit on 2 käyttäjä-sessiota per session host virtuaalikone</p>
 <h2>Host pools</h2>
 
 <p>Host pool on kokoelma Azure virtuaali-koneista jotka toimivat Windows Virtual Desktop palvelussa session hosteina. Kaikkien samassa host poolissa sijaitsevien virtuaali-koneiden tulee pohjautua samaan käyttöjärjestelmä-imageen.</p>
