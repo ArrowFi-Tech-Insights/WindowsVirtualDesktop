@@ -333,7 +333,7 @@
             "metadata": {
                 "description": "The necessary information for adding more VMs to this Hostpool"
             },
-            "defaultValue": "{\"domain\":\"saunakeisari.onmicrosoft.com\",\"galleryImageOffer\":\"Windows-10\",\"galleryImagePublisher\":\"MicrosoftWindowsDesktop\",\"galleryImageSKU\":\"19h2-evd\",\"imageType\":\"Gallery\",\"imageUri\":null,\"customImageId\":null,\"namePrefix\":\"wvd-host\",\"osDiskType\":\"StandardSSD_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_D2s_v3\",\"cores\":2,\"ram\":8},\"galleryItemId\":\"Microsoftwindowsdesktop.windows-1019h2-evd\"}"
+            "defaultValue": "{\"domain\":\"KORVAATÄMÄ.onmicrosoft.com\",\"galleryImageOffer\":\"Windows-10\",\"galleryImagePublisher\":\"MicrosoftWindowsDesktop\",\"galleryImageSKU\":\"19h2-evd\",\"imageType\":\"Gallery\",\"imageUri\":null,\"customImageId\":null,\"namePrefix\":\"wvd-host\",\"osDiskType\":\"StandardSSD_LRS\",\"useManagedDisks\":true,\"vmSize\":{\"id\":\"Standard_D2s_v3\",\"cores\":2,\"ram\":8},\"galleryItemId\":\"Microsoftwindowsdesktop.windows-1019h2-evd\"}"
         },
         "tokenExpirationTime": {
             "type": "string",
@@ -438,7 +438,7 @@
             "metadata": {
                 "description": "Domain to join"
             },
-            "defaultValue": "saunakeisari.onmicrosoft.com"
+            "defaultValue": "KORVAATÄMÄ.onmicrosoft.com"
         }
     },
     "variables": {
