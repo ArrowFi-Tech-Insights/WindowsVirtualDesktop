@@ -63,7 +63,7 @@
             "metadata": {
                 "description": "The workspace resource group Name."
             },
-            "defaultValue": "wvd-demo"
+            "defaultValue": "wvd_demo"
         },
         "allApplicationGroupReferences": {
             "type": "string",
@@ -77,7 +77,7 @@
             "metadata": {
                 "description": "Whether to add applicationGroup to workspace."
             },
-            "defaultValue": "true"
+            "defaultValue": true
         },
         "administratorAccountUsername": {
             "type": "string",
@@ -105,7 +105,7 @@
             "metadata": {
                 "description": "The resource group of the session host VMs."
             },
-            "defaultValue": "wvd-demo"
+            "defaultValue": "wvd_demo"
         },
         "vmLocation": {
             "type": "string",
@@ -227,7 +227,7 @@
             "metadata": {
                 "description": "The resource group containing the existing virtual network."
             },
-            "defaultValue": "wvd-demo"
+            "defaultValue": "wvd_demo"
         },
         "usePublicIP": {
             "type": "bool",
