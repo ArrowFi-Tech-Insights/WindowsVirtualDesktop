@@ -417,6 +417,10 @@
             "metadata": {
                 "description": "Whether to use validation enviroment."
             },
+            "allowedValues": [
+                "true",
+                "false"
+            ],
             "defaultValue": false
         },
         "preferredAppGroupType": {
