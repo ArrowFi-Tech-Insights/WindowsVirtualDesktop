@@ -77,6 +77,10 @@
             "metadata": {
                 "description": "Whether to add applicationGroup to workspace."
             },
+            "allowedValues": [
+                "true",
+                "false"
+            ],
             "defaultValue": true
         },
         "administratorAccountUsername": {
@@ -98,6 +102,10 @@
             "metadata": {
                 "description": "Whether to create a new availability set for the VMs"
             },
+            "allowedValues": [
+                "true",
+                "false"
+            ],
             "defaultValue": true
         },
         "vmResourceGroup": {
@@ -199,6 +207,10 @@
             "metadata": {
                 "description": "True indicating you would like to use managed disks or false indicating you would like to use unmanaged disks."
             },
+            "allowedValues": [
+                "true",
+                "false"
+            ],
             "defaultValue": true
         },
         "storageAccountResourceGroupName": {
@@ -234,6 +246,10 @@
             "metadata": {
                 "description": "Whether to use a Public IP"
             },
+            "allowedValues": [
+                "true",
+                "false"
+            ],
             "defaultValue": false
         },
         "publicIpAddressSku": {
@@ -263,6 +279,10 @@
             "metadata": {
                 "description": "Whether to create a new network security group or use an existing one"
             },
+            "allowedValues": [
+                "true",
+                "false"
+            ],
             "defaultValue": false
         },
         "networkSecurityGroupId": {
