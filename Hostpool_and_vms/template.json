@@ -77,10 +77,6 @@
             "metadata": {
                 "description": "Whether to add applicationGroup to workspace."
             },
-            "allowedValues": [
-                "true",
-                "false"
-            ],
             "defaultValue": true
         },
         "administratorAccountUsername": {
@@ -103,8 +99,8 @@
                 "description": "Whether to create a new availability set for the VMs"
             },
             "allowedValues": [
-                "true",
-                "false"
+                true,
+                false
             ],
             "defaultValue": true
         },
@@ -208,8 +204,8 @@
                 "description": "True indicating you would like to use managed disks or false indicating you would like to use unmanaged disks."
             },
             "allowedValues": [
-                "true",
-                "false"
+                true,
+                false
             ],
             "defaultValue": true
         },
@@ -247,8 +243,8 @@
                 "description": "Whether to use a Public IP"
             },
             "allowedValues": [
-                "true",
-                "false"
+                true,
+                false
             ],
             "defaultValue": false
         },
@@ -280,8 +276,8 @@
                 "description": "Whether to create a new network security group or use an existing one"
             },
             "allowedValues": [
-                "true",
-                "false"
+                true,
+                false
             ],
             "defaultValue": false
         },
@@ -438,8 +434,8 @@
                 "description": "Whether to use validation enviroment."
             },
             "allowedValues": [
-                "true",
-                "false"
+                true,
+                false
             ],
             "defaultValue": false
         },
