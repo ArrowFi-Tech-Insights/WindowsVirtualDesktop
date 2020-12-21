@@ -1,5 +1,5 @@
 <h1>Arrow Tech Insights: Windows Virtual Desktop</h1>
-
+<p>Linkki <a href="https://www.youtube.com/watch?v=rvFlQ1a27vU&feature=youtu.be">video-ohjeeseen</a>.</p>
 <p>Tästä Github repositorystä löytyy toteutus Windows Virtual Desktop demoympäristölle.</p>
 <p>Demossa käytettävät Azure palvelut ja niiden hinnat:</p>
 <ul>
